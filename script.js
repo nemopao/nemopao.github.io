@@ -6,7 +6,7 @@ const canciones = [
     "karatula - siempre te amare.m4a",
     "Dvicio Taburete 5 - Sentidos.mp3",
     "Ed Maverick - siempre estoy pati.mp3",
-    "Perfecta - Miranda.mp3",
+    "Perfecta - Miranda.aac",
     "Afaz Natural - Incondicional.mp3",
     "Banda Los Sebastianes - Y Sólo Tú.mp3",
     "Camilo - Vida de Rico.mp3"
