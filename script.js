@@ -3,7 +3,7 @@ const canciones = [
     "senorita - arsenal de rimaz.mp3",
     "Los Dos Carnales ft. Camilo - Tuyo y Mío.mp3",
     "Calle 13 - Ojos Color Sol ft. Silvio Rodríguez.mp3",
-    "karatula - siempre te amare.mp3",
+    "karatula - siempre te amare.m4a",
     "Dvicio Taburete 5 - Sentidos.mp3",
     "Ed Maverick - siempre estoy pati.mp3",
     "Perfecta - Miranda.mp3",
