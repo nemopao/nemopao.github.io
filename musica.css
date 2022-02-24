@@ -1,0 +1,180 @@
+:root{
+	border-radius: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body{
+	background: linear-gradient(to right, #6c5ce7 , #e84393);
+	
+	
+}
+.contenedor{
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	display: grid;	
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header  header  header"  "thumb  thumb  thumb" "thumb thumb  thumb"  "footer  footer footer";
+	
+	font-family: 'Lato', sans-serif;
+	font-size: 1.3em;
+	
+	/*margin: 15px auto;*/
+	/*padding: 20px;*/
+	text-align: center;
+	gap: 20px;
+}
+.contenedor header{
+	background: lightpink;
+	grid-area: header;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.contenedor header .titulo{
+
+	margin: 20px;
+	padding: 10px;
+	color: deeppink;
+	text-shadow: 1px 2px 2px navy;
+	font-size: 30px;
+	font-family: 'Great Vibes', cursive;
+}
+.contenedor header nav a{
+	text-decoration: none;
+	margin: 20px;
+	padding: 10px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: purple;
+	font-size: 25px;
+	text-shadow: 2px 2px 2px #e4007c;
+	font-family: 'chiller', sans-serif ;
+}
+.contenedor header nav a:hover{
+	color: deeppink;
+	font-weight: bold;
+	text-shadow: 1px 2px 2px black;
+	
+}
+.contenedor .thumb{
+	grid-area: thumb;
+	width: 70%;
+	margin: auto;
+}
+#playList{
+	background: white;
+	border-radius: 10px;
+	text-align: left;
+	opacity: 0.8;
+	color: darkviolet;
+	
+}
+ li{
+	padding: 10px;
+}
+li:hover, svg:hover {
+	cursor: pointer;
+	color: #00bfff;
+}
+li.active{
+	color: #150050;
+}
+#controls{
+	border: 5px deeppink double;
+	border-radius: 10px;
+	padding: 10px;
+	background: pink;
+	opacity: 0.8
+}
+
+svg{
+	color: #c71585;
+}
+
+progress{
+	width: 80%;
+	margin: 10px;
+	opacity: 0.5;
+
+}
+
+.timer{
+	width:50%;
+	position: relative;
+	top:10px;
+	left:0px;
+	text-align:left;
+	float:left;
+	color: deeppink;
+}
+.volumen{
+	width:50%;
+	position: relative;
+	top:10px;
+	right:0px;
+	text-align:right;
+	float:left;
+	color: #e4007c;
+	margin-bottom:20px;
+}
+#currentPlay{
+	color: purple
+}
+h3{
+	color: #e84393;
+	margin:0px;
+}
+
+
+footer{
+	grid-area: footer;
+	background: hotpink;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+footer .derechos{
+	margin: 20px;
+	padding: 10px;
+	color: snow;
+	font-family: 'Pacifico', cursive;
+	text-shadow: #150050 1px 2px 2px ;
+}
+
+@media screen and (max-width: 520px){
+	.contenedor{
+		grid-template-areas: "header header header" "thumb thumb thumb" "footer  footer  footer";
+	}
+	.contenedor header{
+		display: flex;
+		flex-direction: column;
+	}
+	.contenedor header nav{
+		margin-bottom: 20px;
+	}
+	
+	.contenedor .thumb{
+		width: 100%;
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 360px){
+	.contenedor .thumb{
+		flex-direction: column;
+	}
+	svg{
+		flex-direction: column;
+		width: 10%;
+	}
+}

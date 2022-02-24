@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: lightpink;
+  color: #C71585;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contenedor header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: orchid;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid purple;
+}
+
+.contenedor header .titulo {
+  margin: 20px;
+  padding: 10px;
+  text-shadow: 3px 3px 0 snow;
+  font-family: 'Yellowtail', cursive;
+}
+
+.contenedor header nav a {
+  color: deeppink;
+  margin: 20px;
+  padding: 10px;
+  font-size: 25px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 2px snow;
+}
+
+.contenedor header nav a:hover {
+  border-radius: 20px;
+  border-bottom: 3px solid pink;
+  font-weight: bold;
+}
+
+.contenedor .main {
+  border-radius: 20px;
+  background: #DB7093;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+  grid-gap: 20px;
+  border: solid violet 3px;
+}
+
+.contenedor .main .thumb {
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border: solid snow 3px;
+  border-radius: 20px;
+}
+
+.contenedor .main .thumb video, iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.contenedor footer {
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 20px;
+  background: deeppink;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+  border: solid crimson 3px;
+}
+
+.contenedor footer .pie {
+  margin: 20px;
+  padding: 10px;
+  color: pink;
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+  text-shadow: 1px 2px 2px black;
+}
+
+@media screen and (max-width: 750px) {
+  .contenedor {
+    width: 100%;
+  }
+  .contenedor header {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedor header nav {
+    margin-bottom: 20px;
+  }
+  .contenedor .main {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contenedor .main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (auto)[6];
+        grid-template-rows: repeat(6, auto);
+  }
+}
+/*# sourceMappingURL=estilo2.css.map */
